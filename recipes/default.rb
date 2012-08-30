@@ -1,8 +1,5 @@
-#
-# Cookbook Name:: vagrant
-# Recipe:: default
-#
-# Copyright 2012, Example, Com.
-#
-# All rights reserved - Do Not Redistribute
-#
+execute "install vagrant.sh" do
+  command "bash vagrant.sh"
+  action :run
+  cwd "/home/vagrant"
+end
